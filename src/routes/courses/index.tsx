@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import TrendingSection from "../../components/TrendingSection";
-import LookAround from "../../components/LookAround";
+import TrendingSection from "../../components/courses/TrendingSection";
+import LookAround from "../../components/courses/LookAround";
 
 export const Route = createFileRoute("/courses/")({
   component: Courses,

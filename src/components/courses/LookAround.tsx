@@ -1,5 +1,5 @@
-import Filter from "./Filter";
-import SearchBar from "./ui/SearchBar";
+import Filter from "../ui/Filter";
+import SearchBar from "../ui/SearchBar";
 import CourseCard, { CourseCardProps } from "./CourseCard";
 import { useEffect, useState } from "react";
 const mockData: CourseCardProps[] = [
