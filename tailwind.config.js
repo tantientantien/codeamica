@@ -9,12 +9,15 @@ export default {
       },
       padding: {
         default: "54px",
+        double: "108px"
       },
       width: {
         card: "300px",
+        infoSection: "calc(100% - 216px)"
       },
       height: {
         card: "300px",
+        courseSection: "493px"
       },
       minWidth: {
         cardGrid: "988px",
@@ -22,6 +25,9 @@ export default {
       lineHeight: {
         card: "23.7px",
       },
+      gap: {
+        syllabusCol: "10px"
+      }
     },
   },
   plugins: [],
