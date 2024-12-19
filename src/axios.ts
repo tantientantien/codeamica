@@ -1,13 +1,14 @@
 import axios from "axios";
 
-
+const baseURL = import.meta.env.VITE_API_BASE_URL;
 const api = axios.create({
-  baseURL: "http://codeamica.id.vn:10004",
+  baseURL: baseURL,
   timeout: 4500,
   headers: {
     "Content-Type": "application/json",
   },
 });
+
 api.interceptors.response.use(
   (response) => {
     if (Array.isArray(response.data)) {

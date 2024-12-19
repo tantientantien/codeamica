@@ -15,6 +15,7 @@ type CourseData = (Course | LearningPath)
 
 function Courses() {
   const [data, setData] = useState<CourseData[]>([]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -22,6 +23,7 @@ function Courses() {
         api.get("/course/get-all"),
         api.get("/learning-path/get-all")
         ])
+        console.log(coursesResponse.config)
         const courses = (coursesResponse.data as Course[]).map(
           (course) => ({
             ...course,
@@ -42,6 +44,7 @@ function Courses() {
     }
     fetchData()
   }, [])
+  
   return (
     <>
       <TrendingSection data={data.slice(0, 5)}/>
