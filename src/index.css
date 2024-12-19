@@ -10,6 +10,7 @@
   --intermediate-card-color: #ffff9a;
   --advanced-card-color: #ffaaaa;
   --roadmap-card-color: #000036;
+  --yellow-btn-color: #ffcc00;
 }
 
 @media (prefers-color-scheme: dark) {
