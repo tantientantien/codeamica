@@ -13,7 +13,7 @@ export default function Footer() {
         className="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img
-          src="/public/assets/logo_footer.svg"
+          src="/assets/logo_footer.svg"
           width={218}
           height={30}
           className="aspect-[7.27] h-[30px]"
