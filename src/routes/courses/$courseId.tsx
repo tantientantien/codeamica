@@ -1,7 +1,6 @@
 import { createFileRoute, useParams } from "@tanstack/react-router";
 import CourseSection from "../../components/course-details/CourseSection";
-import { SyllabusSection } from "../../components/course-details/SyllabusSection";
-import Syllabus from "../../components/course-details/SyllabusSection";
+
 import {
   EnrollButton,
   ResumeButton,
@@ -103,7 +102,7 @@ function CourseDetail() {
       try {
         const courseResponse = await api.get(`/course/get/${courseId}`);
         const courseData = courseResponse.data as Course ;
-        setCourse(prev => ({...courseData, }))
+        setCourse(()=> ({...courseData, }))
       }
       catch (e) {
         console.log(e)
